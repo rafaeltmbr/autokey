@@ -3,9 +3,6 @@ name = "autokey"
 version = "0.1.0"
 description = ""
 authors = ["Rafhael Payão <rafaeltmbr@gmail.com>"]
-packages = [
-    { include = "scripts" }
-]
 
 [tool.poetry.dependencies]
 python = "^3.10"
