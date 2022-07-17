@@ -1,13 +1,12 @@
 import argparse
 
-from src.constants import Constants
+from ..config.constants import Constants
 
 
 def make_args_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--file', '-f',
-                        default=Constants.FILENAME,
+    parser.add_argument('file',
                         help='path to the source file')
 
     parser.add_argument('--initial-delay', '-i',
