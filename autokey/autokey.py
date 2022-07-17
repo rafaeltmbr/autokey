@@ -5,7 +5,7 @@ from .config.constants import Constants
 from .util.make_args_parser import make_args_parser
 
 
-def app(
+def autokey(
     filename,
     initial_delay: int = Constants.INITIAL_DELAY,
     line_delay: int = Constants.LINE_DELAY,
@@ -32,7 +32,7 @@ def app(
 if __name__ == '__main__':
     args = make_args_parser().parse_args()
 
-    app(
+    autokey(
         filename=args.file,
         initial_delay=int(args.initial_delay),
         line_delay=int(args.line_delay),
